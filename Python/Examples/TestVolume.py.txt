@@ -1,0 +1,12 @@
+#Volume of a sphere
+#kalea gin
+#calculte the volume of a sphere prompt the user
+#ver 1
+#4/2/20
+
+
+import math
+pi = math.pi()
+radius = float(input("Input the "))
+volume = (4*pi*(radius**3))
+print("blah blah", volume, "inches")

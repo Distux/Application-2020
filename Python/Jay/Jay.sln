@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Programming Assignment 2", "Programming Assignment 2\Programming Assignment 2.pyproj", "{EACA05C6-DBE3-4A9C-9781-6D9BD733F67C}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Programming Assignment 3", "Programming Assignment 3\Programming Assignment 3.pyproj", "{E067ADA2-F557-43FC-BA94-3D60BBFAC9F4}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Programming Assignment 4a", "Programming Assignment 4a\Programming Assignment 4a.pyproj", "{EC8D4FB7-C346-459F-B3C5-04FB5AF3BD27}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Programming Assignment 4b", "Programming Assignment 4b\Programming Assignment 4b.pyproj", "{F3512AB4-91BB-405E-97F2-617897E0F0CC}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Programming Assignment 5", "Programming Assignment 5\Programming Assignment 5.pyproj", "{55D95504-AB33-4147-A039-8BACC7050D2F}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Programming Assignment 6", "Programming Assignment 6\Programming Assignment 6.pyproj", "{CDDCCFD9-BB8F-4CD7-988F-9D3395C58F68}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Programming Assignment 7", "Programming Assignment 7\Programming Assignment 7.pyproj", "{B38F6C52-E5C5-4A0A-9F8F-9A07E8500349}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Programming Assignment 1", "Programming Assignment 1\Programming Assignment 1.pyproj", "{47BA8CCB-B94F-4620-B1A6-FCA0621C0D4B}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Programming Assignment 8", "Programming Assignment 8\Programming Assignment 8.pyproj", "{79D781F1-244D-4A3E-8EA2-3DE567E071E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EACA05C6-DBE3-4A9C-9781-6D9BD733F67C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EACA05C6-DBE3-4A9C-9781-6D9BD733F67C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E067ADA2-F557-43FC-BA94-3D60BBFAC9F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E067ADA2-F557-43FC-BA94-3D60BBFAC9F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC8D4FB7-C346-459F-B3C5-04FB5AF3BD27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC8D4FB7-C346-459F-B3C5-04FB5AF3BD27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3512AB4-91BB-405E-97F2-617897E0F0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3512AB4-91BB-405E-97F2-617897E0F0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D95504-AB33-4147-A039-8BACC7050D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D95504-AB33-4147-A039-8BACC7050D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDDCCFD9-BB8F-4CD7-988F-9D3395C58F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDDCCFD9-BB8F-4CD7-988F-9D3395C58F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B38F6C52-E5C5-4A0A-9F8F-9A07E8500349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38F6C52-E5C5-4A0A-9F8F-9A07E8500349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47BA8CCB-B94F-4620-B1A6-FCA0621C0D4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47BA8CCB-B94F-4620-B1A6-FCA0621C0D4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D781F1-244D-4A3E-8EA2-3DE567E071E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D781F1-244D-4A3E-8EA2-3DE567E071E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B658A06A-FECB-46D9-9D16-C257E87F74B6}
+	EndGlobalSection
+EndGlobal
