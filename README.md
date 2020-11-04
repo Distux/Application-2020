@@ -1,5 +1,2 @@
 # Application-2020
-Thank you for checking out my repository!
-My projects were mainly on visual studio code and repl.it
-I have uploaded the visual studio projects onto the VSC branch, while the repl.it ones will have a readme to the link!
-My CAD projeccts are under the master branch.
+The files under Jay are programming assignments from an introductory college level course I solved. The quest files are some of my python solutions of code quest problems.
