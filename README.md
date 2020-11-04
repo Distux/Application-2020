@@ -2,7 +2,7 @@
 Thank you for checking out my repository!
 My projects were mainly on visual studio code and repl.it. 
 I have uploaded the visual studio projects onto the VSC branch, while the repl.it ones are linked below!
-My CAD projeccts are under the master branch.
+My CAD projects are under the master branch.
 
 
 https://repl.it/@Ignata
