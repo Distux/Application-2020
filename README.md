@@ -1,3 +1,2 @@
 # Application-2020
-Hello world!
-Test
+Thank you for checking out my repository!
