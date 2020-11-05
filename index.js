@@ -62,7 +62,7 @@ client.on('guildMemberAdd', member => {
 	if (!channel) return;
 	// Send the message, mentioning the member
 	channel.send(`Karen Ze First welcomes thee, ${member}` , { files: ["./gif/welcome.gif"]});
-	
+	// for one specific server, ignore everyone else
 	if(guild.id == "750460731912093766" || guild.id == "481240992167493652")
 	{
 		const role = guild.roles.cache.find(role => role.name === 'cool person');
@@ -75,11 +75,11 @@ client.on('guildMemberAdd', member => {
 
 
 
-//var origin; // recall who sent fibbonacci last
+
 client.on('message', msg => {
 	if (msg.author.bot) return; // so theres no recursion 
 	
-	
+	// so karen can respond to @s
 	const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
 	if (!prefixRegex.test(msg.content)) return;
 
@@ -88,8 +88,8 @@ client.on('message', msg => {
 	const commandName = args.shift().toLowerCase();
 
 	if (commandName === '') {
-		msg.channel.send("*What?*  Don't bother me if you have nothing to say, I'm busy ya know? I have things to do, anime to watch, manga to read, and people to stalk. **Go away.**");
-	} else if (isDice(msg.channel, commandName, args)) {
+		msg.channel.send("*What?*  Don't bother me if you have nothing to say, I'm busy ya know? I have things to do, anime to watch, manga to read, and seasons to binge. **Go away.**");
+	} else if (isDice(msg.channel, commandName, args)) { // special exception for dice, as the command can accept 4 types of input: roll 10, d 20, d20, dice 20
 		if (isNaN(args[0]) || (args.length == 2 && isNaN(args[1]))) { // check if the args are numbers
 			return msg.reply("Bruh, I can't do anything with that input. Just numbers please.");
 		}
@@ -106,7 +106,7 @@ client.on('message', msg => {
 		return msg.reply('I can\'t execute that command inside DMs!');
 	}
 
-	if (command.args && !args.length) {
+	if (command.args && !args.length) { // for those with args
 		let reply = `You didn't provide any arguments, ${msg.author}!`;
 
 		if (command.usage) {
@@ -116,7 +116,7 @@ client.on('message', msg => {
 		return msg.channel.send(reply);
 	}
 
-	if (!cooldowns.has(command.name)) {
+	if (!cooldowns.has(command.name)) { // cooldown default is around a sec
 		cooldowns.set(command.name, new Discord.Collection());
 	}
 
@@ -148,6 +148,8 @@ client.on('message', msg => {
 
 client.login(token);
 
+
+//=====================================================================================================================
 function isDice(channel, command, args) {
 	//channel.send("isDice called, command = " + command + "args = " + args);
 	if ((command === 'roll' || command === 'd') && args.length > 2) {
@@ -172,7 +174,7 @@ function checkNum(input) {
 	return false;
 }
 
-
+// ==================================== old code ============================== (also available in previous copies of index prior to 3.0)=============
 
 // Turn bot off (destroy), then turn it back on
 /*
