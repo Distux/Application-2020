@@ -1,7 +1,6 @@
 module.exports = {
 	name: 'save',
-    description: 'save or kill?!',
-    aliases: ['kill'],
+    description: 'save',
 	execute(msg, args, Discord) {
 		var temp = Math.floor((Math.random() * 3) + 1);
 		if (temp == 1) {
