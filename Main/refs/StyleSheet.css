@@ -1,0 +1,43 @@
+.movcontainer{
+	position: absolute;
+	top:0px; 
+    left:0%;
+	width:100%;
+	height:60%;
+	overflow:hidden;
+	z-index:54;
+	display: block;
+}
+.contentbody{position:fixed; top:0px; width:100%; height:100%;}
+.tvcover{ top:5%; position:fixed; text-align:center; width:100%;overflow:hidden;}
+.circle{
+    position: absolute;
+    top:10%;
+    left:20%;
+    width:60%;
+    height:60%;
+    text-align:center;
+    z-index: 50;
+}
+.tv {
+    position: relative;
+    z-index: 100;
+}
+.spect {
+/*background-image:url('../images/sound/sw.png');*/
+  width:500px;
+  height:500px;
+  top:-40%;
+  position: relative;
+  margin:auto;
+  transform-origin: center;
+  -webkit-animation-name: spect-rotate;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear; /* Just another timing function */
+}
+@-webkit-keyframes spect-rotate {
+  0% {-webkit-transform: rotate(0deg);}
+  50% {-webkit-transform: rotate(180deg);}
+  100% {-webkit-transform: rotate(360deg);}
+}

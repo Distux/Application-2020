@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kalea Co</title>
+  <meta name="description" content="Boom!">
+  <meta name="author" content="Khriss Stormblessed">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="icon"
+    href="https://images.vexels.com/media/users/3/134019/isolated/preview/1325bd48b2beb02ff35dc6c90bd8f397-sharp-star-icon-05.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="../css/StyleSheet.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bkg sideBars">
+    <div id="roomContainer" class="roomContainer">
+      <img id="roomBkg" class="imgFit" src="../Entrance.png">
+      <div id="clock" class="clockWall clock">
+        <div id="number1" class="numbers" onclick="up('number1')"> 0 </div>
+        <div id="number2" class="numbers" onclick="up('number2')"> 0 </div>
+        <div id="number3" class="numbers" onclick="up('number3')"> 0 </div>
+        <div id="number4" class="numbers" onclick="up('number4')"> 0 </div>
+      </div>
+
+      <img id="catId" class="cat catMain" src="../Cat Body Spirit.png">
+      <img id="hos" class="hos formatItem animate__animated animate__bounceOutLeft"
+        src="https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/2/2b/Herrscher_of_Sentience_Chibi.png/revision/latest?cb=20210305162816">
+      <img id="pillow" class="pillow formatItem" src="../Futon-Transparent-Background.png">
+      <img id="riddle" class="riddle formatItem"
+        src="https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Book_Ragged_Notebook.png/revision/latest?cb=20201116223315">
+    </div>
+    <script>
+      const cat = document.querySelector('#catId');
+      const catSlide = document.getElementById('catId');
+      cat.onclick = function () {
+        catSlide.classList.toggle('bump');
+      }
+
+      const pillow = document.getElementById('pillow');
+      pillow.onclick = function () {
+        pillow.classList.toggle('animate__animated');
+        pillow.classList.toggle('animate__shakeX');
+      }
+
+      const paper = document.getElementById("riddle");
+      paper.onclick = function () {
+        location.href = './pages.html';
+      }
+    </script>
+
+    <script>
+      function up(num) {
+        var current = Number(document.getElementById(num).textContent);
+        if (current + 1 == 10) {
+          document.getElementById(num).textContent = 0;
+        } else {
+          document.getElementById(num).textContent = current + 1;
+        }
+        if (Number(document.getElementById("number1").textContent) == 0 && Number(document.getElementById("number2").textContent) == 5 && Number(document.getElementById("number3").textContent) == 2 && Number(document.getElementById("number4").textContent) == 0) {
+          document.getElementById("clock").style.color = "red";
+          $('#clock').animate({ opacity: "0%" }, 500);
+          
+          setTimeout(() =>{
+            $('#roomContainer').animate({ opacity: "0%" }, 1000);
+          }, 500)
+          setTimeout(() => {
+            location.href = "./end.html";
+          }, 1500);
+        }
+      }
+    </script>
+
+
+  </div>
+
+
+</body>
+
+</html>

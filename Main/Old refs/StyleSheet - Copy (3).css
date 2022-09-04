@@ -1,0 +1,120 @@
+/*NOT FINISHED*/
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+h1 {
+    text-shadow: 2px 2px 1px #ccc;
+    font-family: "Brush Script MT", Times, serif;
+    text-align: left;
+    font-size: 128px;
+    margin: auto;
+    color: #333;
+    font-weight: 400;
+    position: absolute;
+    z-index: 1;
+}
+
+.centerTop {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+}
+
+.topLeft{
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  text-align: left;
+}
+
+.bkg{
+  height: 100vh;
+  width: 100%;
+  background-image: url(Boxbkg.jpg);
+  background-position: center;
+  position:relative;
+
+}
+
+
+.bkg2{
+  position:relative;
+  height: 100vh;
+  background: linear-gradient(#EEFFFF, #FFFFFF);
+}
+
+
+.catCorner{
+  background-color: goldenrod;
+  text-align: center;
+  left:50%;
+  top: 50%;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+.catContainer{
+  background-color: aquamarine;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  text-align: center;
+}
+
+
+.boxCat{
+  float:right;
+  margin-top:40%;
+  padding-right: 10%;
+  height: 500px;
+}
+
+.bombSpot {
+    position: absolute;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    left: 75%;
+    width: 100%;
+    text-align: center;
+  }
+
+.bomb {
+    width: 200px;
+    text-align: center;
+    margin: 5px;
+}
+
+
+.cat {
+  z-index: 1;
+  position:absolute;
+  width: 400px; 
+  bottom:-10%;
+  right: 0%; 
+  transition:1s;
+  animation: catA 1s linear infinite;
+}
+
+
+.bump{
+    right: 20%  ;   
+}
+
+
+
+@keyframes catA {
+  100%{
+    transform: translateY(-5px);
+  }
+  50%{
+    transform: translateY(5px);
+  }
+  0%{
+    transform: translateY(-5px );
+  }
+}
+
+

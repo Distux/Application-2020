@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+  <title>meow</title>
+  <meta name="description" content="Boom!">
+  <meta name="author" content="Khriss Stormblessed">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="icon"
+    href="https://images.vexels.com/media/users/3/134019/isolated/preview/1325bd48b2beb02ff35dc6c90bd8f397-sharp-star-icon-05.png">
+
+  <link href="css/StyleSheet.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="bkg">
+    <div class="mistyBkg"></div>
+    <div id="night" class="darkBkg"></div>
+  </div>
+
+  <div class="topLeft titleBox">
+    <h1 id="header" class="small" style="padding-top: 10px;"> THE </h1>
+    <h1 id="title">KALEA <br> COMPANY</h1>
+    <a class="card bottom" id="card"> Membership Card</a>
+    <script>
+      $('#card').click(function () {
+        $('#card').animate({opacity: 0 }, 3000);
+        $('#header').animate({ opacity: 0 }, 3000);
+        $('#title').animate({ opacity: 0 }, 3000);
+        $('#boxCat').animate({ opacity: 0 }, 7000);
+        $('#boxCat').animate({ opacity: 0 }, 4000);
+        
+        $('.bkg').animate({ opacity: 0 }, 3000);
+        $('#cornerFilgree').animate({ opacity: 0 }, 3000);
+        $('#night').animate({ transform:"translateY(100vh)"}, 4500);
+      });
+
+    </script>
+  </div>
+
+  <div class="boxCat">
+    <img id="catId" src="Cat Body.png" class="cat">
+    <img id="boxCat" class="imgFit" src="Cardboard-Box-PNG-Image.png">
+  </div>
+
+  <img id="cornerFilgree" class="topRight" src="BlackCornerFilgree.png" style="height: 250px;">
+
+  <script>
+    const cat = document.querySelector('.cat');
+    const catSlide = document.getElementById('catId');
+    cat.onclick = function () {
+      catSlide.classList.toggle('bump')
+    }
+  </script>
+
+
+</body>
+
+</html>

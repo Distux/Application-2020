@@ -1,0 +1,12 @@
+
+.mistyBkg{
+    height: inherit;
+    background: linear-gradient(#EEFFFF, #FFFFFF);
+  }
+  
+  .darkBkg{
+    height: inherit;
+    background-color: #333;
+  }
+  
+  

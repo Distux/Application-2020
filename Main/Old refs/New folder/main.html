@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>meow</title>
+    <meta name="description" content="Boom!">
+    <meta name="author" content="Khriss Stormblessed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon"
+      href="https://images.vexels.com/media/users/3/134019/isolated/preview/1325bd48b2beb02ff35dc6c90bd8f397-sharp-star-icon-05.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="../css/StyleSheet.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="bkg sideBars">
+      <div id="roomContainer" class="roomContainer">  
+        
+        <img id="roomBkg" class="imgFit" src="../Entrance.png">
+        <div id="clock" class="clockWall clock">
+          <div id="numbers" class="numbers">
+            0 1 2 3
+          </div>
+        </div>
+        <img id="catId" class="cat catMain" src="../Cat Body Spirit.png">
+        <img id="hos" class="hos formatItem animate__animated animate__bounceOutLeft" src="https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/2/2b/Herrscher_of_Sentience_Chibi.png/revision/latest?cb=20210305162816">
+        <img id="pillow" class="pillow formatItem" src="../Futon-Transparent-Background.png">
+        <img id="riddle" class="riddle formatItem" href="../index.html" src="https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Book_Ragged_Notebook.png/revision/latest?cb=20201116223315">
+      </div>
+      <script>
+        const cat = document.querySelector('#catId');
+        const catSlide = document.getElementById('catId');
+        cat.onclick = function () {
+          catSlide.classList.toggle('bump')
+        }
+      </script>
+
+    </div>
+
+
+  </body>
+</html>

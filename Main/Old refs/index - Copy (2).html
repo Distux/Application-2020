@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dungeon Mist</title>
+  
+  <link rel="icon"
+    href="https://images.vexels.com/media/users/3/134019/isolated/preview/1325bd48b2beb02ff35dc6c90bd8f397-sharp-star-icon-05.png">
+
+  <link href="StyleSheet.css" rel="stylesheet">
+  <style>
+  body {
+    background-image: url('HTML Bkg.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  </style>
+</head>
+
+
+<h1>Misty Wanderers</h1>
+<button class="button center" onclick="func()" >Run</button>
+
+
+<script>
+  function func() {
+    const num = Math.floor(Math.random() * 4); //0 - n-1
+    switch (num) {
+      case 0:
+        window.open("http://www.koalastothemax.com/");
+        break;
+      case 1:
+        window.open("http://endless.horse/");
+        break;
+      case 2:
+        window.open("https://quickdraw.withgoogle.com/#");
+        break;
+      case 3:
+        window.open("https://weirdorconfusing.com/");
+        break;
+    }
+    document.getElementById("demo").innerHTML = text;
+    if (document.getElementById("demo").innerHTML == "Test") {
+      document.getElementById("demo").innerHTML = "Invalid";
+    } else if (document.getElementById("demo").innerHTML == "Invalid") {
+      document.getElementById("demo").innerHTML = "Test"
+    }
+    this.innerHTML = "Doomed!";
+  }
+</script>
+
+<p id="demo" style="display:none">Test</p>
+</html>

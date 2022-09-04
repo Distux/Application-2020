@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kalea Co</title>
+    <meta name="description" content="Boom!">
+    <meta name="author" content="Khriss Stormblessed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon"
+        href="https://images.vexels.com/media/users/3/134019/isolated/preview/1325bd48b2beb02ff35dc6c90bd8f397-sharp-star-icon-05.png">
+
+    <link href="../css/StyleSheet.css" rel="stylesheet">
+    <link href="../css/pages.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bkg sideBars">
+        <div class="roomContainer">
+            <img class="centered oldPaper" src="../OldPaper.jpg">
+            <div id="text" class="centered textBox writing">
+                3/18/22
+                Day 314159... I don't even know...
+                Its been so many years since I've been trapped in this room. Day by day, I wake to see the same
+                monotonous grey walls and I dream about escape. Today though, maybe I've finally lost it, but it feels
+                different. Something strikes my inward eye: the blank tiles before me seem to hold a secret. The first
+                of the etched stones shines with the passing of the zeroth hour. Then, as the day passes, the walls
+                begin to hum, to speak, to sing:
+            </div>
+
+            <img id="inkstains2" class="inkstains centered hidden" src="../Inkstains2.png">
+            <img id="inkstains" class="small topRight hidden"
+                src="https://www.onlygfx.com/wp-content/uploads/2016/05/ink-stain-1.png">
+            <button class="nextButton bottomRight" onclick="next()">Next Page</button>
+            <button class="nextButton back bottomLeft" onclick="back()">Back</button>
+            <script>
+                var riddle = "Ai ai / It's what brought you here / Ai ai / It's whats written in stone / Bai bai / It's what counts to appear / Bai bai / It's what frees thy throne"
+                function next() {
+                    $('#inkstains').animate({ opacity: "100%" }, 500);
+                    setTimeout(() => {
+                        $('#inkstains').animate({ opacity: "0%" }, 500);
+                    }, 2000);
+
+                    setTimeout(() => {
+                        $('#inkstains2').animate({ opacity: "100%" }, 800);
+                        setTimeout(() => {
+                            $('#inkstains2').animate({ opacity: "0%" }, 500);
+                        }, 1400);
+                    }, 300);
+
+                    setTimeout(() => {
+                        $('#text').animate({ opacity: "0%" }, 800);
+                        setTimeout(() => {
+                            $('#text').animate({ opacity: "100%" }, 500);
+                        }, 1400);
+                    }, 300);
+
+                    setTimeout(() => {
+                        document.getElementById("text").textContent = riddle;
+                        document.getElementById("text").style.fontFamily = "lulu";
+                    }, 1100);
+                }
+
+                function back(){
+                    location.href = "./main.html";
+                }
+            </script>
+        </div>
+    </div>
+
+</body>

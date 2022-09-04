@@ -1,0 +1,90 @@
+/*
+    formats main.css
+    21.3.22
+    v1.0
+*/
+
+
+.roomContainer{
+    position: relative;
+    display: block;
+    text-align: center;
+    aspect-ratio: 16/9;
+    width: auto;
+    height:100vh;
+    margin: auto;
+}
+
+
+.formatItem{
+    position: absolute;
+    margin: auto;
+    text-align: center;
+}
+
+.hos{
+    float: right;
+    left: 25%;
+    bottom: 20%;
+    height: 200px;
+}
+
+.riddle{
+    transform: rotateX(60deg);
+    float: right;
+    left: 40%;
+    bottom: 6%;
+    height: 100px;
+}
+
+.pillow{
+    transform: rotateX(5deg);
+    float: right;
+    right: 20%;
+    bottom: 6%;
+    height: 175px;
+}
+
+.clockWall{
+    height: 14.28%;
+    width: 28%;
+}
+
+.clock {
+    display: flex;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.clock > div{
+    margin: 10px;
+    font-size: 13vh;
+    width: inherit;
+    user-select: none;
+}
+
+.numbers{
+    font-family: "clock";
+    text-align: center;
+}
+
+p{
+    display: block;
+    position: absolute;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+@font-face {
+    font-family: clock;
+    src: url("../fonts/digital-7.ttf");
+}

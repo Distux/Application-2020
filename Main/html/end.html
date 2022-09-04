@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kalea Co</title>
+    <meta name="description" content="Boom!">
+    <meta name="author" content="Khriss Stormblessed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon"
+        href="https://images.vexels.com/media/users/3/134019/isolated/preview/1325bd48b2beb02ff35dc6c90bd8f397-sharp-star-icon-05.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="../css/StyleSheet.css" rel="stylesheet">
+    <link href="../css/end.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bkg sideBars">
+        <h1 id="title" class="center animate__animated">
+            Kalea Co
+        </h1>
+        <div id="dialogueContainer" class="dialogueContainer">
+            <div>
+                <img id="hos" class="imgFit hide animate__animated "
+                    src="https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/2/2b/Herrscher_of_Sentience_Chibi.png/revision/latest?cb=20210305162816">
+            </div>
+            <div id="dialogueBox" class="hide animate__animated" style="flex-grow: 3; margin-top:20px">
+                <div id="dialogue" class="dialogueText topLeft animate__animated" data-textLine="0">...</div>
+                <img id="pkmnBox" class="imgFit animate__animated" src="../DialoguePkmn.png">
+            </div>
+        </div>
+        <img id="catId" class="cat catEnd bottomRight" src="../Cat Body Spirit.png">
+    </div>
+
+
+    <script>
+        $("#title").hover(function () {
+            $("#title").addClass('animate__hinge');
+            setTimeout(() => {
+                $("#hos").attr('opacity:100%');
+                $("#hos").addClass("animate__bounceInRight");
+                $("#hos").addClass("visible");
+                $("#dialogueBox").addClass("animate__jackInTheBox");
+                $("#dialogueBox").addClass("visible");
+            }, 2000)
+        });
+
+        const cat = document.querySelector('#catId');
+        const catSlide = document.getElementById('catId');
+        cat.onclick = function () {
+            catSlide.classList.toggle('bump');
+            document.getElementById("dialogue").textContent = "Happy Birthdey Sis uwu";
+        }
+
+        var hosDialogue = [
+            "Hi there!",
+            "I know, surprised to see me aren't you?",
+            "Huh? You saw me earlier?",
+            "That's strange, I thought I had... Hmph, well whatever, theres an easy solution that!",
+            "*The Herrscher of Sentience has modfified your memory, you have no recollection of seeing her earlier*",
+            "Anyways, Hi there! A little bird told me its your birthday.",
+            "Considering the magnanimous me, I figured it might be amusing to give a few words of celebration.",
+            "Hm? You don't think its so simple? You're clearly mistaken. I am correct. I am always correct!",
+            "Although, it is partially as you say.",
+            "That old timer had a fortuious meeting with that little bird, so I have come to pay old debts.",
+            "It was something to do with rebuilding the Shenzhou Pheonix Farm I think.",
+            "But anyways, I've just come to wish you a very happy 2nd birthday!",
+            "May you be blessed with even a small sliver of my greateness, and eternal prosperity will follow.",
+            "Its not your 2nd birthday? Damn that bird, did she give me the wrong information?",
+            "Happy 21st birthday, then!",
+            "Yahooey!, another job well done, I am really the best~",
+            "Stop talking to me and go celebrate now~"
+        ]
+
+        var hos = document.getElementById("hos");
+        var txt = document.getElementById("dialogue");
+        hos.onclick = function nextLine() {
+            var current = Number(txt.getAttribute("data-textLine"));
+            txt.setAttribute("data-textLine", current + 1)
+            //$("#dialogue").data("textLine", current+1)
+
+            if (current >= hosDialogue.length) { 
+                txt.setAttribute("data-textLine", current - 1); 
+                catSlide.classList.toggle('bump'); 
+            }
+
+            $("#dialogue").animate({ opacity: "0%" }, 500);
+            setTimeout(() => {
+                txt.textContent = hosDialogue[current];
+                $("#dialogue").animate({ opacity: "100%" }, 500);
+            }, 500)
+        };
+
+    </script>
+</body>
+
+</html>
