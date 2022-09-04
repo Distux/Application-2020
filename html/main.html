@@ -1,0 +1,54 @@
+<!--
+    main.html
+    kalea gin
+    body of escape room, combo lock unlocks upon deciphering the riddle 
+    21.3.22
+    v3.2
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kalea Co</title>
+  <meta name="description" content="Boom!">
+  <meta name="author" content="Khriss Stormblessed">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="icon"
+    href="https://images.vexels.com/media/users/3/134019/isolated/preview/1325bd48b2beb02ff35dc6c90bd8f397-sharp-star-icon-05.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="../css/styles.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <script type="text/javascript" src="../scripts/scripts.js"></script>
+  <script type="text/javascript" src="../scripts/mainIni.js"></script>
+</head>
+
+<body>
+  
+  <div class="bkg sideBars">
+    <div id="roomContainer" class="roomContainer">
+      <img id="roomBkg" class="imgFit" src="../images/Entrance.png">
+      <div id="clock" class="clockWall clock">
+        <div id="number1" class="numbers" onclick="up('number1')"> 0 </div>
+        <div id="number2" class="numbers" onclick="up('number2')"> 0 </div>
+        <div id="number3" class="numbers" onclick="up('number3')"> 0 </div>
+        <div id="number4" class="numbers" onclick="up('number4')"> 0 </div>
+      </div>
+
+      
+      <img id="hos" class="hos formatItem animate__animated animate__bounceOutLeft"
+        src="../images/Herrscher_of_Sentience_Chibi.png" style="visibility:hidden">
+      <img id="pillow" class="pillow animate__animated formatItem" src="../images/Futon-Transparent-Background.png">
+      <img id="riddle" class="riddle animate__animated formatItem"
+        src="../images/Book_Ragged_Notebook.png">
+    </div>
+    
+    <script type="text/javascript" src="../scripts/main.js"></script>
+
+  </div>
+
+
+</body>
+
+</html>
